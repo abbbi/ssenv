@@ -69,6 +69,12 @@ func main() {
 		"PSONO_CI_API_KEY_ID",
 		"CPLEX_STUDIO_KEY",
 		"api-token",
+		"PYPI_TOKEN",
+		"IEX_TOKEN",
+		"TMDB_API_TOKEN",
+		"FRED_API_KEY",
+		"NEPTUNE_API_TOKEN",
+		"GITHUB_COM_TOKEN",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
