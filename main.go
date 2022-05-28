@@ -1,14 +1,11 @@
 package main
 
 import (
-	"flag"
 	"log"
 	"os"
 )
 
 func main() {
-	exit := flag.Bool("exit", false, "Exit instead of unsetting environment vars")
-	flag.Parse()
 	var apikeys = []string{
 		"AWS_ACCESS_KEY_ID",
 		"AWS_SECRET_ACCESS_KEY",
@@ -81,11 +78,7 @@ func main() {
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
 		if present {
-			if *exit {
-				log.Fatalf("Found key: [%s]", s)
-			}
-			log.Printf("Unsetting key: [%s]", s)
-			os.Unsetenv(s)
+			log.Fatalf("Found key: [%s]", s)
 		}
 	}
 }
