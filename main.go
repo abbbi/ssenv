@@ -17,6 +17,7 @@ func main() {
 		"API_KEY",
 		"TOKEN",
 		"SECRET",
+		"SECRET_TOKEN",
 		"GOOGLE_API_KEY",
 		"ATLAS_TOKEN",
 		"authToken",
@@ -37,6 +38,7 @@ func main() {
 		"AUTH0_MGMT_API_TOKEN",
 		"TFE_TOKEN",
 		"K6_CLOUD_TOKEN",
+		"K8S_AUTH_API_KEY",
 		"HEROKU_API_KEY",
 		"SENDGRID_API_KEY",
 		"CLOUDFLARE_AUTH_TOKEN",
@@ -58,6 +60,15 @@ func main() {
 		"SPOTIPY_CLIENT_SECRET",
 		"AZURE_STORAGE_KEY",
 		"AZURE_STORAGE_SAS_TOKEN",
+		"TWITTER_SECRET",
+		"TWITTER_KEY",
+		"REACT_APP_API_KEY",
+		"NPM_TOKEN",
+		"PRIVATE_KEY",
+		"OPENAI_API_KEY",
+		"PSONO_CI_API_KEY_ID",
+		"CPLEX_STUDIO_KEY",
+		"api-token",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
