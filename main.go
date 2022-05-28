@@ -75,6 +75,8 @@ func main() {
 		"FRED_API_KEY",
 		"NEPTUNE_API_TOKEN",
 		"GITHUB_COM_TOKEN",
+		"CLOUDSMITH_API_KEY",
+		"SLACK_BOT_TOKEN",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
