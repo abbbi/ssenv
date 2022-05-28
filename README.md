@@ -1,1 +1,1 @@
-Unset all environment variables known for be used as access tokens.
+Safe env: Unset all environment variables known for be used as access tokens.
