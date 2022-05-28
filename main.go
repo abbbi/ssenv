@@ -11,10 +11,12 @@ func main() {
 	flag.Parse()
 	var apikeys = []string{
 		"AWS_ACCESS_KEY_ID",
+		"AWS_SECRET_ACCESS_KEY",
 		"GITHUB_TOKEN",
 		"PRIVATE-TOKEN",
 		"API_KEY",
 		"TOKEN",
+		"SECRET",
 		"GOOGLE_API_KEY",
 		"ATLAS_TOKEN",
 		"authToken",
@@ -52,6 +54,10 @@ func main() {
 		"GHTOKEN",
 		"KAGGLE_KEY",
 		"GH_TOKEN",
+		"SPOTIPY_CLIENT_ID",
+		"SPOTIPY_CLIENT_SECRET",
+		"AZURE_STORAGE_KEY",
+		"AZURE_STORAGE_SAS_TOKEN",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
