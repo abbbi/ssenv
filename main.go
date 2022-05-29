@@ -74,6 +74,12 @@ func main() {
 		"GITHUB_COM_TOKEN",
 		"CLOUDSMITH_API_KEY",
 		"SLACK_BOT_TOKEN",
+		"CIRCLE_TOKEN",
+		"PLATFORMIO_AUTH_TOKEN",
+		"RS_TOKEN",
+		"CARGO_REGISTRY_TOKEN",
+		"JB_SPACE_CLIENT_TOKEN",
+		"SNYK_TOKEN",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
