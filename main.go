@@ -80,6 +80,9 @@ func main() {
 		"CARGO_REGISTRY_TOKEN",
 		"JB_SPACE_CLIENT_TOKEN",
 		"SNYK_TOKEN",
+		"OVIRT_TOKEN",
+		"NUTANIX_SESSION_AUTH",
+		"hcloud_token",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
