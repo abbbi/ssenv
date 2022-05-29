@@ -83,6 +83,10 @@ func main() {
 		"OVIRT_TOKEN",
 		"NUTANIX_SESSION_AUTH",
 		"hcloud_token",
+		"PERCY_TOKEN",
+		"CALIBRE_API_TOKEN",
+		"DX_SECURITY_CONTEXT",
+		"GENIUS_API_TOKEN",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
