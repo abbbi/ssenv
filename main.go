@@ -87,6 +87,7 @@ func main() {
 		"CALIBRE_API_TOKEN",
 		"DX_SECURITY_CONTEXT",
 		"GENIUS_API_TOKEN",
+		"TAP_FACEBOOK_ACCESS_TOKEN",
 	}
 	for _, s := range apikeys {
 		_, present := os.LookupEnv(s)
